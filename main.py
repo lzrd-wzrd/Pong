@@ -15,13 +15,10 @@ r_paddle = Paddle((350, 0))
 l_paddle = Paddle((-350, 0))
 scoreboard = Scoreboard()
 
-#screen.listen()
 screen.onkey(r_paddle.up, 'Up')
 screen.onkey(r_paddle.down, 'Down')
 screen.onkey(l_paddle.up, 'w')
 screen.onkey(l_paddle.down, 's')
-#screen.onkey(ball.serve, 'Return')
-#screen.listen()
 
 scoreboard.player_1 = screen.textinput('', "Player 1 name?")
 scoreboard.player_2 = screen.textinput('', "Player 2 name?")
